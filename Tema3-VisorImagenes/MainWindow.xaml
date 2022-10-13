@@ -11,7 +11,7 @@
         <Style TargetType="{x:Type Image}">
             <Setter Property="Height" Value="210"></Setter>
         </Style>
-       <!-- <Style TargetType="{x:Type Border}">
+        <!-- <Style TargetType="{x:Type Border}">
             <Setter Property="Margin" Value="10"></Setter>
             <Setter Property="BorderThickness" Value="2"></Setter>
             <Setter Property="BorderBrush" Value="Black"></Setter>
@@ -37,8 +37,7 @@
             <Setter Property="DockPanel.Dock" Value="Top"></Setter>
         </Style>
     </Window.Resources>
-    
-    
+
     <!--Codigo XAML-->
     <DockPanel>
         <DockPanel DockPanel.Dock="Bottom" Background="LightBlue" Height="100" Margin="10" LastChildFill="False">
