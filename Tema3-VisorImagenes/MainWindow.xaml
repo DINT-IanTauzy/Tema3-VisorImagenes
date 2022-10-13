@@ -40,33 +40,33 @@
 
     <!--Codigo XAML-->
     <DockPanel>
-        <DockPanel DockPanel.Dock="Bottom" Background="LightBlue" Height="100" Margin="10" LastChildFill="False">
-            <TextBlock DockPanel.Dock="Left" Style="{StaticResource TextBlock_ParteInferior}">Nº de imágenes: 10</TextBlock>
-            <TextBlock DockPanel.Dock="Right" Style="{StaticResource TextBlock_ParteInferior}">Diseñado por Ian Tauzy</TextBlock>
+        <DockPanel DockPanel.Dock="Bottom" Background="LightBlue" Height="100" Margin="10">
+            <TextBlock FontFamily="Rubik" FontSize="20" VerticalAlignment="Center" Margin="5">Nº de imágenes: 10</TextBlock>
+            <TextBlock FontFamily="Rubik" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5">Diseñado por Ian Tauzy</TextBlock>
         </DockPanel>
-        <Border DockPanel.Dock="Right" BorderThickness="2" BorderBrush="Black" CornerRadius="4" Margin="10">
-            <DockPanel Background="LightGreen" Width="140" LastChildFill="False">
+        <Border DockPanel.Dock="Right" Margin="10" BorderThickness="2" BorderBrush="Black" CornerRadius="4">
+            <DockPanel Background="LightGreen" Width="140" >
                 <StackPanel DockPanel.Dock="Top">
                     <Button>Añadir imagen</Button>
                     <Button>Eliminar imagen</Button>
                     <Button>Eliminar todas</Button>
                 </StackPanel>
-                <StackPanel  DockPanel.Dock="Bottom">
-                    <Button>Rotar</Button>
-                    <Button>Recortar</Button>
+                <StackPanel  Height="60" VerticalAlignment="Bottom">
+                    <Button Margin="5">Rotar</Button>
+                    <Button Margin="5">Recortar</Button>
                 </StackPanel>
             </DockPanel>
         </Border>
-        <TextBlock Style="{StaticResource Titulo}">Visor de Imágenes</TextBlock>
-        <WrapPanel>
-            <Image Source="./Recursos/episodioIV.jpg"></Image>
-            <Image Source="./Recursos/episodioIV.jpg"></Image>
-            <Image Source="./Recursos/episodioIV.jpg"></Image>
-            <Image Source="./Recursos/episodioIV.jpg"></Image>
-            <Image Source="./Recursos/episodioIV.jpg"></Image>
-            <Image Source="./Recursos/episodioIV.jpg"></Image>
-            <Image Source="./Recursos/episodioIV.jpg"></Image>
-            <Image Source="./Recursos/episodioIV.jpg"></Image>
+        <TextBlock DockPanel.Dock="Top" HorizontalAlignment="Center" FontSize="40" FontFamily="Rubik">Visor de Imágenes</TextBlock>
+        <WrapPanel Margin="0,0,10,10" MinWidth="550">
+            <Image Source="./Recursos/episodioIV.jpg" Height="210"></Image>
+            <Image Source="./Recursos/episodioIV.jpg" Height="210"></Image>
+            <Image Source="./Recursos/episodioIV.jpg" Height="210"></Image>
+            <Image Source="./Recursos/episodioIV.jpg" Height="210"></Image>
+            <Image Source="./Recursos/episodioIV.jpg" Height="210"></Image>
+            <Image Source="./Recursos/episodioIV.jpg" Height="210"></Image>
+            <Image Source="./Recursos/episodioIV.jpg" Height="210"></Image>
+            <Image Source="./Recursos/episodioIV.jpg" Height="210"></Image>
         </WrapPanel>
     </DockPanel>
 </Window>
