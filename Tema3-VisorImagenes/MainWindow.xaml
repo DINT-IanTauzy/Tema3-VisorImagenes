@@ -27,17 +27,12 @@
         <Style TargetType="{x:Type Button}">
             <Setter Property="Margin" Value="5"></Setter>
         </Style>
-        <Style TargetType="{x:Type WrapPanel}">
-            <Setter Property="Margin" Value="0,0,10,10"></Setter>
-        </Style>
         <Style TargetType="{x:Type TextBlock}" x:Key="Titulo">
             <Setter Property="HorizontalAlignment" Value="Center"></Setter>
             <Setter Property="FontSize" Value="40"></Setter>
             <Setter Property="FontFamily" Value="Rubik"></Setter>
         </Style>
-        <Style TargetType="{x:Type DockPanel}" x:Key="DockParteInferior">
-            <Setter Property="Background" Value="LightBlue"></Setter>
-        </Style>
+        
     </Window.Resources>
 
     <!--Codigo XAML-->
@@ -60,7 +55,7 @@
             </DockPanel>
         </Border>
         <TextBlock DockPanel.Dock="Top" Style="{StaticResource Titulo}">Visor de Imágenes</TextBlock>
-        <WrapPanel>
+        <WrapPanel Margin="0,0,10,10">
             <Image Source="./Recursos/episodioIV.jpg"></Image>
             <Image Source="./Recursos/episodioIV.jpg"></Image>
             <Image Source="./Recursos/episodioIV.jpg"></Image>
